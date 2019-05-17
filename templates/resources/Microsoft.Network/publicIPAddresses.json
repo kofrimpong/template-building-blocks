@@ -33,9 +33,10 @@
                     "resources": [
                         {
                             "type": "Microsoft.Network/publicIPAddresses",
-                            "apiVersion": "2017-04-01",
+                            "apiVersion": "2019-02-01",
                             "location": "[parameters('publicIPAddresses')[copyIndex()].location]",
                             "name": "[parameters('publicIPAddresses')[copyIndex()].name]",
+                            "sku": "[parameters('publicIPAddresses')[copyIndex()].sku]",
                             "properties": "[parameters('publicIPAddresses')[copyIndex()].properties]"
                         }
                     ],
