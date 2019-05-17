@@ -36,7 +36,8 @@
                             "apiVersion": "2019-02-01",
                             "location": "[parameters('applicationGateways')[copyIndex()].location]",
                             "name": "[parameters('applicationGateways')[copyIndex()].name]",
-                            "properties": "[parameters('applicationGateways')[copyIndex()].properties]"
+                            "properties": "[parameters('applicationGateways')[copyIndex()].properties]",
+                            "zones": "[parameters('applicationGateways')[copyIndex()].zones]"
                         }
                     ],
                     "outputs": {}

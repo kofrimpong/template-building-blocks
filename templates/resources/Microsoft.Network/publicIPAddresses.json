@@ -37,7 +37,8 @@
                             "location": "[parameters('publicIPAddresses')[copyIndex()].location]",
                             "name": "[parameters('publicIPAddresses')[copyIndex()].name]",
                             "sku": "[parameters('publicIPAddresses')[copyIndex()].sku]",
-                            "properties": "[parameters('publicIPAddresses')[copyIndex()].properties]"
+                            "properties": "[parameters('publicIPAddresses')[copyIndex()].properties]",
+                            "zones": "[parameters('publicIPAddresses')[copyIndex()].zones]"
                         }
                     ],
                     "outputs": {}
